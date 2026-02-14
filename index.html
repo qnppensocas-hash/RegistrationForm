@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+
+            <!-- Name Row -->
+            <div class="row">
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" id="firstName">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" id="lastName">
+                    <small class="error"></small>
+                </div>
+            </div>
+
+            <!-- Username -->
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username">
+                <small class="error"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="input-group">
+                <label>Email</label>
+                <input type="text" id="email" placeholder="example@email.com">
+                <small class="error"></small>
+            </div>
+
+            <!-- Phone -->
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="text" id="phone" placeholder="e.g. 09123456789">
+                <small class="error"></small>
+            </div>
+
+            <!-- Birthday + Gender -->
+            <div class="row">
+                <div class="input-group">
+                    <label>Birthday</label>
+                    <input type="date" id="birthday">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-group">
+                    <label>Gender</label>
+                    <select id="gender">
+                        <option value="">Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <small class="error"></small>
+                </div>
+            </div>
+
+            <!-- Country -->
+            <div class="input-group">
+                <label>Country</label>
+                <select id="country">
+                    <option value="">Select Country</option>
+                    <option>Philippines</option>
+                    <option>USA</option>
+                    <option>Japan</option>
+                </select>
+                <small class="error"></small>
+            </div>
+
+            <!-- Password Row -->
+            <div class="row">
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword">
+                    <small class="error"></small>
+                </div>
+            </div>
+
+            <!-- Terms Checkbox -->
+            <div class="terms-container">
+                <label class="terms-label">
+                    <input type="checkbox" id="terms">
+                    I agree with the Terms & Conditions
+                </label>
+                <small class="error" id="termsError"></small>
+            </div>
+
+            <!-- Register Button -->
+            <button type="submit" class="btn">Register</button>
+
+            <!-- Login Link -->
+            <p class="login-text">
+                Already have an account?
+                <a href="#">Login</a>
+            </p>
+
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
